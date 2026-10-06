@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "history-keeper",
+  "description": "history-keeper: a deletion-proof copy of every Claude Code session, message times and /history search",
+  "owner": { "name": "Daniil Bystrov", "url": "https://github.com/Jvrd97" },
+  "plugins": [
+    {
+      "name": "history-keeper",
+      "description": "Keep a copy of every session that the 30-day cleanup cannot delete, as JSONL and markdown, with message times and /history search.",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/Jvrd97/claude-history-keeper"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "history-keeper",
+  "version": "0.1.0",
+  "description": "Keep a copy of every Claude Code session that the 30-day cleanup cannot delete, as JSONL and readable markdown, with message times in the transcript and /history to list and search old sessions.",
+  "author": { "name": "Daniil Bystrov", "url": "https://github.com/Jvrd97" },
+  "homepage": "https://github.com/Jvrd97/claude-history-keeper",
+  "repository": "https://github.com/Jvrd97/claude-history-keeper",
+  "license": "MIT",
+  "keywords": ["mod", "history", "transcripts", "backup", "timestamps", "search"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "vaultDir": {
+      "type": "string",
+      "title": "Vault folder",
+      "description": "Where session copies go, one folder per project. ~ is your home folder.",
+      "default": "~/.claude/history-keeper"
+    },
+    "vaultEveryMinutes": {
+      "type": "number",
+      "title": "Copy at most every (minutes)",
+      "description": "After a turn, copy the session again only if this many minutes passed since the last copy. 0 copies after every turn. The session's end always copies.",
+      "default": 5
+    },
+    "markdown": {
+      "type": "boolean",
+      "title": "Write markdown",
+      "description": "Write a readable .md beside each .jsonl copy: prompts, replies and tool names with times. /history searches it.",
+      "default": true
+    },
+    "timestamps": {
+      "type": "string",
+      "title": "Times in the transcript",
+      "description": "off; prompts puts a dim local time beside each of your prompts; all also beside the first block of each reply.",
+      "default": "prompts",
+      "options": ["off", "prompts", "all"]
+    }
+  }
+}
