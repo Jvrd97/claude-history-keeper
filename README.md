@@ -21,8 +21,8 @@ Sessions mentioning "kafka", most matches first (searched 3):
 
 Claude Code deletes session transcripts older than 30 days, and nothing tells you it did:
 
-- [#59248](https://github.com/anthropics/claude-code/issues/59248): transcripts silently deleted, people lost work history (175 👍, 220 comments, open).
-- [#44763](https://github.com/anthropics/claude-code/issues/44763): messages have no timestamps (280 👍, 151 comments, open).
+- [#59248](https://github.com/anthropics/claude-code/issues/59248): transcripts silently deleted, people lost work history (41 👍, 58 comments, open on 2026-10-06).
+- [#44763](https://github.com/anthropics/claude-code/issues/44763): messages have no timestamps (93 👍, 38 comments, open on 2026-10-06).
 - [#2112](https://github.com/anthropics/claude-code/issues/2112): old sessions are hard to name and find.
 
 The official knob is `cleanupPeriodDays` in `settings.json`: raise it and Claude Code keeps transcripts longer. A copy of your own still helps:
